@@ -202,6 +202,13 @@ header
     flex-shrink: 0;
 }
 
+.shareIcon
+{
+    width: 50px;
+    height: 42.992px;
+    flex-shrink: 0;
+}
+
 
 /* ---------- end of Main content style ---------- */
 
