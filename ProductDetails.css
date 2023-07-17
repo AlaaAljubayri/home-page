@@ -7,6 +7,7 @@
   cursor: pointer;
 }
 
+
 /* ---------- Header style ---------- */
 #backgroundHeader
 {
@@ -194,7 +195,7 @@ header
     color: #1F4C47;
     /* margin-right: 140px; */
     /* margin-bottom: 700px; */
-    /* line-height: 0 ; */
+    line-height: 0.5 ;
     font-family: Josefin Sans;
     font-size: 35px;
     /* font-style: normal; */
@@ -205,20 +206,22 @@ header
     /* flex: 50%; */
 }
 
-#heartIcon
+.heartIcon
 {
     /* top: 50px; */
     width: 35px;
     height: 32.992px;
     /* flex-shrink: 0; */
-    /* margin-top: 40px; */
+    margin-top: 5px;
     /* flex: 10%; */
 }
 
-#shareIcon
+.shareIcon
 {
     width: 35px;
     height: 32.992px;
+    margin-top: 5px;
+
     /* margin-top: 40px; */
 
     /* flex-shrink: 0; */
@@ -247,7 +250,7 @@ header
     text-transform: capitalize;
 }
 
-.heartIcon
+/* .heartIcon
 {
 width: 234px;
 height: 48px;
@@ -259,7 +262,7 @@ font-family: Josefin Sans;
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
-}
+} */
 
 .shopButton
 {
