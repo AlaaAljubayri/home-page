@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <section class="product"> 
+        <h2 class="product-category">best selling</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card3.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card4.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card5.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card6.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/card7.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    
+    <script>
+        const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+    </script>
+
+</body>
+</html>
