@@ -183,7 +183,7 @@ header
   transform: translateX(-50%);
   width: 234px;
   height: 48px;
-  margin-top: 310px;
+  margin-top: 320px;
   /* margin-left: 170px; */
   margin-left: 1000px;
   font-size: 24px;
@@ -236,7 +236,7 @@ line-height: normal; */
 
 
 
-  .card 
+  /* .card 
   {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       padding: 13px;
@@ -248,7 +248,7 @@ line-height: normal; */
       border-radius: 2px;
       background: #E3EEEB;
       z-index: 5;
-  }
+  } */
   
   #productName
   {
