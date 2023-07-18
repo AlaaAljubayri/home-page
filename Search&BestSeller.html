@@ -61,7 +61,7 @@
 <!------------ Main content ------------>
 
 <!------------ search ------------>
-<div id="searchIcon" style="  left: 500px;
+<!-- <div id="searchIcon" style="  left: 500px;
 top: 300px;">
     <img src="searchIcon.png" alt="searchIcon">
   </div>
@@ -69,12 +69,13 @@ top: 300px;">
   top: 300px;">
     <p class="menuBar" style=" text-decoration-line:none;">Search</p>
   </div>
-  <div id="line"></div>
+  <div id="line"></div> -->
 <!------------ end of search part ------------>
 
 <!-- shop button -->
+      <!-- <h2 id="price">Best Seller</h2> -->
 
-    <button class="shopButton" id="clickable" style="top: 180px; left: auto;">Shop Now!</button>
+    <!-- <button class="shopButton" id="clickable" style="top: 180px; left: auto;">Shop Now!</button> -->
 
 <!-- best seller slidershow -->
 
@@ -84,71 +85,128 @@ top: 300px;">
 
     <div class="product-container">
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
+        <div class="product-card" id="a">
+            <div class="product-image">
+                <span style="color: red;">50% off</span>
+                <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+                <img src="product img.png" class="product-thumb" alt="">
+                <button class="card-btn">add to Cart</button>
+            </div>
+            <div class="product-info">
+                <span class="product-brand">Ethiopia</span>
+                <span class="price">$20</span> 
+                <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+                <p class="product-short-description">a short line about the cloth..</p>
+            </div>
         </div>
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
+        <div class="product-card" id="a">
+          <div class="product-image">
+              <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+              <img src="product img.png" class="product-thumb" alt="">
+              <button class="card-btn">add to Cart</button>
+          </div>
+          <div class="product-info">
+              <span class="product-brand">Ethiopia</span>
+              <span class="price">$20</span> 
+              <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+              <p class="product-short-description">a short line about the cloth..</p>
+          </div>
+      </div>
+      <div class="product-card" id="a">
+        <div class="product-image">
+            <span style="color: red;">50% off</span>
+            <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+            <img src="product img.png" class="product-thumb" alt="">
+            <button class="card-btn">add to Cart</button>
         </div>
-
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
+        <div class="product-info">
+            <span class="product-brand">Ethiopia</span>
+            <span class="price">$20</span> 
+            <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+            <p class="product-short-description">a short line about the cloth..</p>
         </div>
+    </div>
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
-        </div>
+    <div class="product-card" id="a">
+      <div class="product-image">
+          <span style="color: red;">50% off</span>
+          <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+          <img src="product img.png" class="product-thumb" alt="">
+          <button class="card-btn">add to Cart</button>
+      </div>
+      <div class="product-info">
+          <span class="product-brand">Ethiopia</span>
+          <span class="price">$20</span> 
+          <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+          <p class="product-short-description">a short line about the cloth..</p>
+      </div>
+  </div>
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
-        </div>
+  <div class="product-card" id="a">
+    <div class="product-image">
+        <span style="color: red;">50% off</span>
+        <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+        <img src="product img.png" class="product-thumb" alt="">
+        <button class="card-btn">add to Cart</button>
+    </div>
+    <div class="product-info">
+        <span class="product-brand">Ethiopia</span>
+        <span class="price">$20</span> 
+        <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+        <p class="product-short-description">a short line about the cloth..</p>
+    </div>
+</div>
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
-        </div>
+<div class="product-card" id="a">
+  <div class="product-image">
+      <span style="color: red;">50% off</span>
+      <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+      <img src="product img.png" class="product-thumb" alt="">
+      <button class="card-btn">add to Cart</button>
+  </div>
+  <div class="product-info">
+      <span class="product-brand">Ethiopia</span>
+      <span class="price">$20</span> 
+      <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+      <p class="product-short-description">a short line about the cloth..</p>
+  </div>
+</div>
 
-        <div class="card" id="a">
-            <img src="product img.png">
-            <div id="#productName" style="text-align: left; padding-left: 12px;">Ethiopia
-            <div id="price">20$</div></div>
-            <p id="productDetails" style="text-align: left; padding-left: 12px;">Eos erant dolorum an.</p>
-            <img src="heartIcon.png" alt="heartIcon">
-            <img src="addToCartIcon.png" alt="addToCartIcon" style="margin: 0px 0px 0px 100px; ">
-        </div>
+<div class="product-card" id="a">
+  <div class="product-image">
+      <span style="color: red;">50% off</span>
+      <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+      <img src="product img.png" class="product-thumb" alt="">
+      <button class="card-btn">add to Cart</button>
+  </div>
+  <div class="product-info">
+      <span class="product-brand">Ethiopia</span>
+      <span class="price">$20</span> 
+      <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+      <p class="product-short-description">a short line about the cloth..</p>
+  </div>
+</div>
+
+<div class="product-card" id="a">
+  <div class="product-image">
+      <span style="color: red;">50% off</span>
+      <img class="heartIcon" src="heartIcon.png" alt="heartIcon">
+      <img src="product img.png" class="product-thumb" alt="">
+      <button class="card-btn">add to Cart</button>
+  </div>
+  <div class="product-info">
+      <span class="product-brand">Ethiopia</span>
+      <span class="price">$20</span> 
+      <p class="actual-price" style="opacity: 0.5; font-weight: 10; font-size: 20px;">$40</p>
+      <p class="product-short-description">a short line about the cloth..</p>
+  </div>
+</div>
 
 
 
+
+        
         <!-- <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>

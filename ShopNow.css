@@ -248,13 +248,42 @@ footer
     z-index: 1;    
 }
 
-@media only screen and (min-width: 100px)
+/* @media only screen and (min-width: 100px)
 {
-    /* For mobile phones: */
     .homeBackground, footer, #backgroundHeader, #menuBar, 
     #msgCoffee1, header,#H , .column
     {
         width: 100%;
     }
+} */
+
+/* for mobile devices */
+@media only screen and (min-width: 100px)
+{
+    .homeBackground, footer, #backgroundHeader, #menuBar, 
+    #msgCoffee1, header,#H , .column
+    {
+        width: 100%;
+    }
+}
+
+
+/* For Mobile Devices */
+@media screen and(max-width:767px)
+{
+    .flex-container{flex-direction: column;}
+    .flex-item{width:100%;}
+}
+/* For Tablets */
+@media screen and(min-width:768px) and (max-width:1023px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:50%;}
+}
+/* For Desktops */
+@media screen and(min-width:1024px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:33.33%;}
 }
 
