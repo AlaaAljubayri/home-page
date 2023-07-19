@@ -168,7 +168,7 @@ header
   /* , lightgray -60.722px 0px / 115.102% 100% no-repeat; */
   width: 490px;
   height: 727px;
-  top: 395px;
+  top: 340px;
   left: 1050px;
   transform: rotate(-79.495deg);
   flex-shrink: 0;
@@ -295,8 +295,9 @@ line-height: normal; */
     font-size: 30px;
     color: #1F4C47;
     max-width: 500px;
-    margin: 0px auto;
+    margin: 50px auto;
     text-align: center;
+    z-index: 2;
   }
   
   .hr-lines:before
@@ -329,7 +330,7 @@ line-height: normal; */
     position: absolute;
     overflow: hidden;
     padding: 10px;
-    margin-top: 440px;
+    margin-top: 520px;
     /* margin-left: 300px; */
     /* width: 800px; */
   }
@@ -545,7 +546,7 @@ footer
 {
   position: absolute;
   left: 0px;
-  top: 946px;
+  top: 1000px;
   text-align: center;
   display: flex;
   flex-direction: column;
