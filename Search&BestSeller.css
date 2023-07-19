@@ -168,7 +168,7 @@ header
   /* , lightgray -60.722px 0px / 115.102% 100% no-repeat; */
   width: 490px;
   height: 727px;
-  top: 395px;
+  top: 312px;
   left: 1050px;
   transform: rotate(-79.495deg);
   flex-shrink: 0;
@@ -545,7 +545,7 @@ footer
 {
   position: absolute;
   left: 0px;
-  top: 946px;
+  top: 1146px;
   text-align: center;
   display: flex;
   flex-direction: column;
