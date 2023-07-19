@@ -242,7 +242,7 @@ header
 
 .smallDetailsStyle
 {
-    color: #8F8F8F;
+    color: #767575;
     font-family: Josefin Sans;
     font-size: 20px;
     font-style: normal;
@@ -258,7 +258,7 @@ header
   /* top: 740px; */
   display: flex;
   /* margin-left: 130px; */
-  padding: 10px 110px 10px 110px;
+  padding: 10px 0px 10px 75px;
   /* padding-left: 100px; */
   font-family: Josefin Sans;
   /* transform: translateX(-50%); */
@@ -493,6 +493,25 @@ footer
     {
         width: 100%;
     }
+}
+
+/* For Mobile Devices */
+@media screen and(max-width:767px)
+{
+    .flex-container{flex-direction: column;}
+    .flex-item{width:100%;}
+}
+/* For Tablets */
+@media screen and(min-width:768px) and (max-width:1023px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:50%;}
+}
+/* For Desktops */
+@media screen and(min-width:1024px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:33.33%;}
 }
 
 
