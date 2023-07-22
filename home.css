@@ -78,6 +78,8 @@ header
     font-size: 10px; 
     font-weight: bold;
     top: 0px;
+    display: flex;
+    flex-wrap: wrap;
     transition: 0.2s;
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
@@ -87,6 +89,7 @@ header
 .logo
 {
   position: absolute;
+  display: flex;
   width: 276px;
   height: 100px;
   left: 680px;
