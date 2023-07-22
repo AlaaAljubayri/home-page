@@ -28,6 +28,31 @@
   height: 267px;
 }
 
+/* Column container */
+.ColContainer 
+{  
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-right 
+{
+    flex: 10%;
+    -ms-flex: 30%; /* IE10 */
+    /* margin-right: 70px; */
+    /* background-color: #f1f1f1; */
+}
+
+.column-left 
+{   
+    flex: 50%;
+    -ms-flex: 50%; /* IE10 */
+    margin-top: 15px;
+    /* background-color: white; */
+    /* padding: 50px 50px 0px 40px; */
+}
+
 /* ---------- Header style ---------- */
 
 #backgroundHeader
@@ -41,9 +66,9 @@
 
 .homeBackground
 {
-  background: url(Group\ 30.png); 
+  /* background: url(Group\ 30.png);  */
   width: 1440px;
-  height: 521px; 
+  height: 595px; 
   position: absolute;
 }
 
@@ -98,6 +123,7 @@ header
   flex-grow: 0;
   z-index: 1;
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   order: 0;
   flex-grow: 0;
@@ -198,14 +224,29 @@ line-height: normal;
   border-radius: 5px;
   transition: 0.5s;
   cursor: pointer;
+  
 }
 
-.shopButton:hover
+.shopButton:hover 
   {
     opacity: 1;
     background: #2e595c;
     color:#DFD6C3;
   }
+
+
+  a:hover
+  {
+    color:#DFD6C3;
+    opacity: 1;
+    font-size: larger;
+  }  
+
+a
+{
+  background: #2e595c00;
+  color:#DFD6C3;
+}
 
 
 /* Coffee is a Culture, Life and Passion */
@@ -296,3 +337,25 @@ footer
       width: 100%;
     }
   }
+
+
+/* For Mobile Devices */
+@media screen and(max-width:767px)
+{
+    .flex-container{flex-direction: column;}
+    .flex-item{width:100%;}
+}
+/* For Tablets */
+@media screen and(min-width:768px) and (max-width:1023px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:50%;}
+}
+/* For Desktops */
+@media screen and(min-width:1024px)
+{
+    .flex-container{flex-direction: row;flex-wrap: wrap;}
+    .flex-item{width:33.33%;}
+}
+
+

@@ -2,7 +2,20 @@
     box-sizing: border-box;
 }
 
-#clickable:hover
+a:hover
+{
+  color:#DFD6C3;
+  opacity: 1;
+  font-size: larger;
+}  
+
+a
+{
+background: #2e595c00;
+color:#DFD6C3;
+}
+
+#clickable:hover ,a.clickable
 {
   cursor: pointer;
 }
