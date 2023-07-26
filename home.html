@@ -89,5 +89,21 @@
 <!------------ end of footer ------------>
 
 
+<script>
+          function FetchPage(page)
+        {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function()
+            {   if (xhr.readyState === XMLHttpRequest.DONE)
+                {   if(xhr.status===200)
+                    {document.querySelector('*').innerHTML = xhr.responseText;}
+                    else {console.log("Error",xhr.status);}
+                }
+            };
+            xhr.open('GET',`/${page}`,true);
+            xhr.send();
+        }
+</script>
+
 </body>
 </html>
